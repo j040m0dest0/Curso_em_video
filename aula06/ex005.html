@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First steps with DOM</title>
+
+  <style>
+    body{
+      background-color: rgb(192, 175, 118);
+      color:azure;
+      font: normal 20pt Arial;
+        
+      
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1>Initialize with DOM</h1>
+  <p>aqui vai o resultado : </p>
+  <p>Aprendendo a usar o <i><strong>DOM</strong></i></p>
+  <div id="msg">Clique em mim</div>
+  <Script>
+    var corpo = window.document.body
+    var p1 = window.document.getElementsByTagName('p')[0]
+    var d = window.document.querySelector('div#msg')
+    d.style.color = 'grey'
+
+
+
+    //exemplos de como selecionar um elemento
+    //var d = window.document.getElementById('msg')
+   // d.style.backgroundColor = 'green' 
+    //window.document.write(p1.innerText) 
+    //corpo.style.backgroundColor='gray'
+    //p1.style.color = 'blue'
+
+
+  </Script>
+</body>
+</html>

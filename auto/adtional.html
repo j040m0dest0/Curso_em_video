@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+      body {
+margin:0;
+padding:0;
+background:#cccccc;
+text-align:center; /* hack para o IE */	
+	}
+#tudo {
+width: 760px;
+margin:0 auto;			
+padding: 10px;
+text-align:left; /* "remédio" para o hack do IE */	
+	}
+#conteudo {
+padding: 5px;
+background-color: #eeeeee;
+	}
+    
+  </style>
+</head>
+<body>
+  <h2></h2>
+
+
+
+  <script>
+    //window.alert('Bem vindo ao modesto livre')
+    
+    var nome = String(window.prompt('qual seu nome ?')) 
+    document.writeln(`Bem vindo ao modesto Livre senhor(a) ${nome}`)
+    var prod = String(window.prompt('qual seria o seu produto ?'))
+    var preco = Number(window.prompt('qual seria o preço do produto?'))
+   
+    var imposto = preco * 0.25 + preco
+
+    imposto.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+ 0
+    document.writeln(`<br>o preço estipulado do produto <strong> ${prod} </strong></br> pelo senhor(a) ${nome} seria de ${preco.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} porem com as nossas politicas o preço sugerido é de ${imposto.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)
+
+  </script>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam imperdiet lorem nisi, pretium placerat tellus sollicitudin eu. Integer tincidunt rhoncus pretium. Praesent sit amet ante finibus, vulputate arcu non, rhoncus ex. Vivamus tincidunt aliquet purus, at scelerisque eros tempus in. Aenean eget orci in massa feugiat sagittis. Mauris sollicitudin auctor finibus. Donec massa nisl, varius a vulputate vel, molestie tincidunt velit. Pellentesque condimentum accumsan sodales. Proin feugiat tincidunt felis, vitae eleifend quam hendrerit sed. Praesent libero nisl, mollis a viverra nec, rhoncus eget arcu. Curabitur vehicula purus a tortor convallis auctor. Sed tincidunt suscipit ante eu blandit. Integer porttitor dolor aliquam leo tincidunt convallis. Integer in diam in eros viverra ultricies. Sed dapibus urna mi. Duis sed enim feugiat, ullamcorper ex porta, pretium justo.</p>
+
+
+<p>aqui possuimos 25% de taxa no valor do produto para ser </br> postado em nosso site</p>
+</body>
+</html>
