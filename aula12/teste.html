@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Verificação de nacionalidade</h1>
+
+    Me diga de que país é você meu chapa : <input type="text" name="txtvel" id="txtvel"> :-)
+   
+    <input type="button" value="verificar" onclick="check()">
+   
+    <div id="res"></div>
+
+    <script>
+        function check(){
+          var txtv = window.document.querySelector('input#txtvel')
+          var res = window.document.querySelector('div#res')
+          var nac = String(txtv.value)
+          res.innerHTML = `<p>O My friend diz que vem de <strong>${nac}</strong></p>`
+          if(nac == 'Brasil'){
+            
+            res.innerHTML += `<p>eai parceiro</p>`
+
+          }
+          else{
+            res.innerHTML += `<p>Donde esta my plata cabron</p>`
+          }
+          
+     }
+
+    </script>
+    
+</body>
+</html>
