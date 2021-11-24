@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cadastro de pessoa</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  
+  <header>
+    <h1>cadastro de pessoa</h1>
+
+</header>
+
+<section>
+    <div>
+        <p>aqui você vai cadastrar a pessoa : <br>
+
+          Nome : <input type="text" name="fnum" id="txtn"><br>         
+          profissão :  <input type="text" name="fnum" id="txtp"><br>
+          idade : <input type="number" name="fnum" id="fnum"><br>
+
+          <p>Sexo :
+            <input type="radio" name="radsex" id="masc">
+            <label for="masc">Masculino</label>
+
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+
+            <input type="radio" name="radsex" id="num">
+            <label for="num">Outros</label>
+
+        </p>
+
+
+          <input type="button" value="adicionar" onclick="adicionar()">
+      
+
+        </p>
+
+    </div>
+    <div id="res">
+      <select name="nomes" id="flista" size="10">
+                
+      </select>
+      <br>
+
+      <input type="button" value="finalizar" onclick="finalizar()">
+
+
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; HumbleProductions</p>
+</footer>
+
+<script src="main.js"></script>
+  
+</body>
+</html>
